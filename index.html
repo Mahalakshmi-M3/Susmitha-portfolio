@@ -1,103 +1,312 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Susmitha — Frontend Developer portfolio. Explore projects, skills and contact details.">
-  <title>Susmitha | Frontend Developer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Susmitha's Frontend Developer Portfolio">
+    <title>Susmitha | Frontend Developer</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
+
 <body>
-  <div class="page-glow glow-one"></div>
-  <div class="page-glow glow-two"></div>
 
-  <header class="topbar">
-    <a class="brand" href="#home" aria-label="Susmitha home"><span class="brand-mark">S</span><span>Susmitha<span class="brand-dot">.</span></span></a>
-    <a class="top-portfolio" href="#projects">Portfolio <span aria-hidden="true">↗</span></a>
-  </header>
+    <!-- Navigation -->
+    <header class="header">
+        <a href="#home" class="logo">Portfolio</a>
 
-  <aside class="side-nav" aria-label="Main navigation">
-    <a class="nav-link active" href="#home"><span class="nav-icon">⌂</span><span>Home</span></a>
-    <a class="nav-link" href="#about"><span class="nav-icon">◎</span><span>About</span></a>
-    <a class="nav-link" href="#skills"><span class="nav-icon">✳</span><span>Skills</span></a>
-    <a class="nav-link" href="#projects"><span class="nav-icon">▤</span><span>Projects</span></a>
-    <a class="nav-link" href="#contact"><span class="nav-icon">✉</span><span>Contact</span></a>
-  </aside>
+        <nav class="navbar" id="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
 
-  <main>
-    <section class="hero section" id="home">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="status-dot"></span> AVAILABLE FOR OPPORTUNITIES</p>
-        <p class="intro-line">Hi, I'm <span class="accent-text">Susmitha</span></p>
-        <h1>Frontend<br><span class="outline-text">Developer</span></h1>
-        <p class="hero-description">I build exceptional digital experiences that are fast, accessible, and visually appealing. Let's create something amazing together.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#contact">Hire Me <span>↗</span></a>
-          <a class="button button-secondary" href="#projects">View Work <span>↓</span></a>
+        <div class="menu-icon" id="menu-icon">
+            <i class="fa-solid fa-bars"></i>
         </div>
-        <div class="hero-note"><span class="note-line"></span><span>Turning ideas into interactive experiences.</span></div>
-      </div>
+    </header>
 
-      <div class="hero-visual">
-        <div class="video-orbit orbit-one"></div>
-        <div class="video-orbit orbit-two"></div>
-        <div class="video-card">
-          <div class="video-topline"><span><i></i> INTRODUCTION</span><span class="video-duration">00:10</span></div>
-          <video class="intro-video" controls playsinline preload="metadata">
-            <source src="assets/susmitha-intro.mp4" type="video/mp4">
-            Your browser does not support HTML video.
-          </video>
-          <div class="video-caption"><span class="caption-icon">▶</span><span><strong>Meet Susmitha</strong><small>A quick introduction</small></span><span class="caption-arrow">↗</span></div>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+
+        <div class="home-content">
+
+            <h1>
+                Hi, I'm <span>Susmitha</span>
+            </h1>
+
+            <h2>Frontend Developer</h2>
+
+            <p>
+                I build exceptional digital experiences that are
+                fast, accessible, and visually appealing.
+                Let's create something amazing together.
+            </p>
+
+            <div class="home-buttons">
+                <a href="#contact" class="btn primary-btn">
+                    Hire Me
+                </a>
+
+                <a href="#projects" class="btn secondary-btn">
+                    View Work
+                </a>
+            </div>
+
+            <div class="social-links">
+
+                <a href="https://github.com/" target="_blank"
+                aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="https://linkedin.com/" target="_blank"
+                aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+                <a href="https://twitter.com/" target="_blank"
+                aria-label="Twitter">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+            </div>
+
         </div>
-        <div class="floating-chip chip-code"><span>&lt;/&gt;</span> Creative code</div>
-        <div class="floating-chip chip-ui"><span>✦</span> Thoughtful UI</div>
-        <div class="visual-spark spark-one">✳</div>
-        <div class="visual-spark spark-two">✦</div>
-      </div>
-      <a class="scroll-cue" href="#about"><span class="scroll-wheel"></span> SCROLL TO EXPLORE</a>
+
+
+        <!-- Square Introduction Video -->
+        <div class="home-video">
+
+            <div class="video-frame">
+
+                <video
+                    id="introVideo"
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    preload="auto"
+                    poster="assets/video-poster.jpg">
+
+                    <source
+                    src="assets/susmitha-intro.mp4"
+                    type="video/mp4">
+
+                    Your browser does not support video playback.
+
+                </video>
+
+                <button class="sound-btn" id="soundBtn"
+                aria-label="Enable video sound">
+                    <i class="fa-solid fa-volume-xmark"></i>
+                </button>
+
+            </div>
+
+        </div>
+
     </section>
 
-    <section class="content-section section" id="about">
-      <div class="section-kicker">01 / ABOUT</div>
-      <div class="section-heading-row"><h2>A little about <span class="accent-text">me.</span></h2><p>Curious by nature. Creative by design.</p></div>
-      <div class="about-panel">
-        <div class="about-symbol">S<span>.</span></div>
-        <div><h3>Design-minded. Code-driven.</h3><p>I'm Susmitha, a frontend developer who enjoys turning ideas into clean, responsive and user-friendly web experiences. I love learning new technologies, solving problems and bringing thoughtful designs to life.</p></div>
-      </div>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+
+        <div class="section-heading">
+            <h2>About <span>Me</span></h2>
+            <p>Get to know me</p>
+        </div>
+
+        <div class="about-content">
+
+            <div class="about-text">
+                <h3>Frontend Developer</h3>
+
+                <p>
+                    Hello! I'm Susmitha, a passionate frontend developer
+                    interested in creating modern, responsive and
+                    user-friendly websites.
+
+                    I enjoy learning new technologies, solving problems
+                    and turning creative ideas into functional websites.
+                </p>
+
+                <a href="#contact" class="btn primary-btn">
+                    Let's Connect
+                </a>
+            </div>
+
+        </div>
+
     </section>
 
-    <section class="content-section section" id="skills">
-      <div class="section-kicker">02 / SKILLS</div>
-      <div class="section-heading-row"><h2>Tools I work <span class="accent-text">with.</span></h2><p>My current development toolkit.</p></div>
-      <div class="skill-grid">
-        <div class="skill-card"><span class="skill-number">01</span><span class="skill-symbol">5</span><h3>HTML5</h3><p>Semantic structure</p></div>
-        <div class="skill-card"><span class="skill-number">02</span><span class="skill-symbol">✳</span><h3>CSS3</h3><p>Responsive styling</p></div>
-        <div class="skill-card"><span class="skill-number">03</span><span class="skill-symbol">JS</span><h3>JavaScript</h3><p>Interactive experiences</p></div>
-        <div class="skill-card"><span class="skill-number">04</span><span class="skill-symbol">◈</span><h3>React</h3><p>Component-based UI</p></div>
-      </div>
+
+    <!-- Skills Section -->
+    <section class="skills section" id="skills">
+
+        <div class="section-heading">
+            <h2>My <span>Skills</span></h2>
+            <p>Technologies I work with</p>
+        </div>
+
+        <div class="skills-container">
+
+            <div class="skill-card">
+                <i class="fa-brands fa-html5"></i>
+                <h3>HTML5</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-brands fa-css3-alt"></i>
+                <h3>CSS3</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-brands fa-js"></i>
+                <h3>JavaScript</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-brands fa-php"></i>
+                <h3>PHP</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-solid fa-database"></i>
+                <h3>MySQL</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-brands fa-git-alt"></i>
+                <h3>Git</h3>
+            </div>
+
+        </div>
+
     </section>
 
-    <section class="content-section section" id="projects">
-      <div class="section-kicker">03 / PROJECTS</div>
-      <div class="section-heading-row"><h2>Selected <span class="accent-text">work.</span></h2><p>A few things I've been building.</p></div>
-      <div class="project-grid">
-        <article class="project-card project-featured"><div class="project-art art-one"><span class="art-window"><i></i><i></i><i></i><b>YOUR NEXT BIG IDEA</b><small>Thoughtful digital experiences.</small></span></div><div class="project-info"><div><span class="project-type">01 / WEB DESIGN</span><h3>Creative Landing Page</h3></div><span class="project-arrow">↗</span></div></article>
-        <article class="project-card"><div class="project-art art-two"><span class="dashboard-shape"><i></i><i></i><i></i><b></b></span></div><div class="project-info"><div><span class="project-type">02 / FRONTEND</span><h3>Dashboard Interface</h3></div><span class="project-arrow">↗</span></div></article>
-      </div>
-      <p class="placeholder-note">Replace these sample project cards with your actual project names, screenshots and links.</p>
+
+    <!-- Projects Section -->
+    <section class="projects section" id="projects">
+
+        <div class="section-heading">
+            <h2>My <span>Projects</span></h2>
+            <p>Some of my recent work</p>
+        </div>
+
+        <div class="projects-container">
+
+            <div class="project-card">
+                <div class="project-icon">
+                    <i class="fa-solid fa-calendar-check"></i>
+                </div>
+
+                <h3>Event Reservation System</h3>
+
+                <p>
+                    A web-based event reservation system
+                    designed to manage hall bookings and
+                    reservation requests.
+                </p>
+
+                <div class="project-tech">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>PHP</span>
+                    <span>MySQL</span>
+                </div>
+
+                <a href="#" class="project-link">
+                    View Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+
+
+            <div class="project-card">
+                <div class="project-icon">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+
+                <h3>Web Development Project</h3>
+
+                <p>
+                    A responsive website built with
+                    modern frontend technologies and
+                    user-friendly layouts.
+                </p>
+
+                <div class="project-tech">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+
+                <a href="#" class="project-link">
+                    View Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+
+        </div>
+
     </section>
 
-    <section class="content-section contact-section section" id="contact">
-      <div class="section-kicker">04 / CONTACT</div>
-      <div class="contact-panel"><div><p class="eyebrow">HAVE A PROJECT IN MIND?</p><h2>Let's build something<br><span class="accent-text">great together.</span></h2></div><a class="button button-primary" href="mailto:hello@example.com">Get In Touch <span>↗</span></a></div>
-      <p class="contact-hint">Update <strong>hello@example.com</strong> with Susmitha's email address.</p>
-    </section>
-  </main>
 
-  <footer><span>© <span id="year"></span> Susmitha</span><span>Designed & built with care <b>✦</b></span></footer>
-  <script src="script.js"></script>
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+
+        <div class="section-heading">
+            <h2>Contact <span>Me</span></h2>
+            <p>Let's work together</p>
+        </div>
+
+        <div class="contact-container">
+
+            <p>
+                Have a project or opportunity in mind?
+                Feel free to get in touch.
+            </p>
+
+            <a href="mailto:your-email@example.com"
+            class="btn primary-btn">
+                <i class="fa-solid fa-envelope"></i>
+                Send Email
+            </a>
+
+            <div class="contact-socials">
+                <a href="https://github.com/" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="https://linkedin.com/" target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>
+            © 2026 Susmitha. All Rights Reserved.
+        </p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
 </body>
 </html>
