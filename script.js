@@ -16,7 +16,6 @@ menuIcon.addEventListener("click", () => {
     }
 });
 
-
 // Close Menu After Clicking Navigation Link
 
 document.querySelectorAll(".navbar a").forEach(link => {
@@ -33,7 +32,6 @@ document.querySelectorAll(".navbar a").forEach(link => {
 
 });
 
-
 // Introduction Video Autoplay
 
 const introVideo = document.getElementById("introVideo");
@@ -49,7 +47,6 @@ const playIntroVideo = () => {
 };
 
 window.addEventListener("load", playIntroVideo);
-
 
 // Sound Toggle
 
@@ -72,7 +69,6 @@ soundBtn.addEventListener("click", () => {
     }
 
 });
-
 
 // Active Navigation on Scroll
 
